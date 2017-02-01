@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload Hawker Details</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#add_field').live('click',function() {
+            $(this).parent('fieldset').clone().insertAfter($(this).parent('fieldset'));
+    });
+});
+</script>
+
+</head>
+
+
+<body>
+ 
+<form id="Stall" title="Stall Details">
+<div>
+Stall Number
+<br>
+<input type="text"title="Stall No" id="stall_no"></div>
+<div>
+Stall Name
+<br>
+<input type="text" title="Stall Name"id="stall_name">
+</div>
+
+<div id="menu">
+<fieldset id="menu_stuff">
+<input type="text" placeholder="Menu Item" title="Menu Item" id="menu_item">
+<input type="text" placeholder="Price" title="Price" id="price">
+<input type="button" name="button" id="add_field" value="+">
+</fieldset>
+</div>
+
+<input type="submit" form="Stall" formaction="mailto: khairul.ikhwan00@gmail.com" formenctype="text/plain" formmethod="POST" formtarget="_top">
+</form>
+</body>
+</html>
