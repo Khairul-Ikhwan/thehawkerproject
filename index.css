@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+@media (max-width: 480px) {
+
+}
+
 div {
 	margin-top: 5px;
 	margin-bottom: 10px;
